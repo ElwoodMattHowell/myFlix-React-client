@@ -4,7 +4,7 @@ import axios from 'axios';
 import { connect } from 'react-redux';
 
 import { Row, Col, } from 'react-bootstrap';
-import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import { setMovies, setUser } from '../../actions/actions.js';
 import MovieList from '../movie-list/movie-list';
