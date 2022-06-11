@@ -16,7 +16,7 @@ export function MovieView({ movie, onBackClick }) {
           <Col><Button onClick={() => onBackClick()}>Back</Button></Col>
           <Col xs={12} sm={6} md={6}>
             <Card className="custom-class" >
-              <Card.Img variant="top" src={movie.ImagePath + "?not-from-cache-please"} crossOrigin="Anonymous" />
+              <Card.Img variant="top" src={movie.ImageStill} />
             </Card>
           </Col>
           <Col></Col>
@@ -27,10 +27,10 @@ export function MovieView({ movie, onBackClick }) {
               <Card.Body>
                 <Card.Text>{movie.Description}</Card.Text>
                 <Link to={`/directors/${movie.Director.Name}`}>
-                  <Button variant="link">Director</Button>
+                  <Button variant="link">Director: {movie.Director.Name}</Button>
                 </Link>
                 <Link to={`/genres/${movie.Genre.Name}`}>
-                  <Button variant="link">Genre</Button>
+                  <Button variant="link">Genre: {movie.Genre.Name}</Button>
                 </Link>
               </Card.Body>
             </Card>
