@@ -1,3 +1,6 @@
+import { Row, Col, Button, Card, Figure } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+
 function FavoriteMovies({ movieList, removeFromFavorites }) {
   return (
     <Card className="custom-class favorites-header">
